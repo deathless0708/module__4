@@ -1,0 +1,27 @@
+h1 {
+    background: red;
+
+}
+
+.par-1 {
+    background: blue;
+    color: green;
+    font-size: 32pt;
+
+}
+
+.par-2 {
+    border: 10px solid yellow;
+    font-size: 24pt;
+    border-radius : 5px;
+    margin-bottom: 60px;
+    padding-left: 200px
+}
+
+.par-3 {
+    font-size:24px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 5px -7px 3px green;
+
+}
