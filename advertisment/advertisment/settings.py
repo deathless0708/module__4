@@ -56,7 +56,7 @@ ROOT_URLCONF = 'advertisment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [Path.joinpath(BASE_DIR, 'templates')], # 1-путь до проекта, 2-Название папки с шаблонами
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
