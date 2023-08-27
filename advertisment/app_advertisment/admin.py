@@ -4,9 +4,11 @@ from .models import Advertisement
 # Register your models here.
 
 class AdvertisementAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'description', 'price', 'auction', 'created_date', 'updated_date']
+    list_display = ['id', 'title', 'description', 'price', 'auction', 'created_date', 'updated_date', 'image', 'img_nav']
     list_filter = ['auction', 'created_at']
     actions = ['make_auction_as_false', 'make_auction_as_true']
+
+    @admin.display()
 
     @admin.action(description='Убрать возможность торга')
     def make_auction_as_false(self, request, queryset):
